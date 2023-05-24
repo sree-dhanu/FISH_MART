@@ -20,7 +20,7 @@
 
 
                     <!-- //form -->
-                    <form action="/addregisteraction" method="post">
+                    <form action="/addregisteraction" method="post" id="regform">
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
@@ -37,11 +37,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputdescription1">Username</label>
-                                <input type="text" class="form-control" name="runame" id="exampleInputContact" placeholder="Enter username">
+                                <input type="text" class="form-control" name="runame" id="runame" placeholder="Enter username">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputdescription1">Password</label>
-                                <input type="password" class="form-control" name="rpassword" id="exampleInputContact" placeholder="Enter password">
+                                <input type="password" class="form-control" name="rpassword" id="rpassword" placeholder="Enter password">
                             </div>
 
                             <!-- /.card-body -->
@@ -58,6 +58,35 @@
     <!-- /.row -->
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+<script type="text/javascript">
+    $("#regform").validate({
+        rules: {
+            rname: {
+                required: true,
+                minlength: 5
+            },
+            remail: {
+                required: true,
+                email: true
+            },
+            runame: {
+                required: true,
+                minlength: 6
+            },
+            rpassword: {
+                required: true,
+                minlength: 8
+            },
+            rphone: {
+                required: true,
+                minlength: 10
+            }
 
+        }
+    });
+</script>
 
 @endsection

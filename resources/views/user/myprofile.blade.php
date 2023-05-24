@@ -31,7 +31,7 @@
                 <div id="drink" class="tm-page-content">
                     <!-- Drink Menu Page -->
                     <center>
-                        <h1 class="tm-page-link ">My Profile</h1>
+                        <h1 class="tm-page-fonts ">My Profile</h1>
                     </center>
 
                  

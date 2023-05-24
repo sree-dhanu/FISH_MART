@@ -19,12 +19,12 @@
 <div class="tm-container">
     <div class="tm-row">
         <!-- Site Header -->
-        <div class="tm-right pl-5">
+        <div class="tm-right ">
             <main class="tm-main">
                 <div id="drink" class="tm-page-content">
                     <!-- Drink Menu Page -->
                     <center>
-                        <h2 class="tm-page-link ">View Cart</h2>
+                        <h2 class="tm-page-fonts ">View Cart</h2>
                     </center>
 
 

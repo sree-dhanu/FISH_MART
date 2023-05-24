@@ -1,27 +1,29 @@
 @extends('user.index')
 @section('fishbody')
-<div class="tm-container">
-    <div class="tm-row">
+<!-- <div class="tm-container">
+    <div class="tm-row"> -->
         <!-- Site Header -->
-        <div class="tm-right pl-5">
+        <div class="container">
+            <div class="row">
+           
+            <div class="col-md-12">
             <main class="tm-main">
                 <div id="drink" class="tm-page-content">
-                    <!-- Drink Menu Page -->
-                    <center>
-                        <h2 class="tm-page-link ">UserView Orders</h2>
-                    </center>
 
+                <center>
+                        <h2 class="tm-page-fonts ">UserView Orders</h2>
+                    </center>
 
                     <div id="cold">
                        
                         <div class="tm-list">
                             <div class="tm-list-item">
                     <div class="tm-black-bg tm-list-item-text cart">
-                        <form action="/proceedaction" method="post">
+                        <form action="/proceedaction" method="post" id="regform">
                             @csrf
                             <div class="container">
                                 <div class="row ">
-                                    <div class="col-md-12">
+                                    <div class="col-md-10">
                                         <table class="w-100 pl-3">
                                             <tr>
                                                 <th class="px-5">ID</th>
@@ -39,7 +41,7 @@
                                                 <td class="px-5"> {{$value->totalamount}}</td>
                                             </tr>
                                             @endforeach
-                                           
+                                        </table>  
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +50,17 @@
                     </div>
                 </div>
 
+
+            </div>
+            </div>
         </div>
+        <!-- <div class="tm-right pl-5"> -->
+
+                    <!-- Drink Menu Page -->
+                 
+
+                    
+        
         </main>
 
     </div>
